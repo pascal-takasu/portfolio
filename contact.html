@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+    <div id="content">
+        <header id="header">
+            <h1>WEB SITE</h1>
+            <nav id="menu">
+                <h2>MENU</h2>
+                <a href="index.html#news"><p>news</p></a>
+                <a href="index.html#blog"><p>blog</p></a>
+                <a href="index.html#footer"><p>contact</p></a>
+            </nav>
+        </header>
+        <main>
+            <h2>CONTACT</h2>
+            <section id="contact">
+                <form action="" method="POST">
+                <div>
+                    <label for="name">氏名(必須)：</label>
+                    <input id="name" type="text" name="name" placeholder="山田　太郎" required>
+                </div>
+                <div>
+                    <label for="mail">メールアドレス(必須)：</label>
+                    <input id="mail" type="email" name="email" placeholder="aaa@aaa.com" required>
+                </div>
+                <div>
+                    <label for="tel">電話番号：</label>
+                    <input id="tel" type="tel" name="tel" placeholder="090XXXXXXXX">
+                </div>
+                <div>
+                    <label>返信方法：</label>
+                    <input id="reply-email" type="radio" name="reply"><label for="reply-email">メール</label>
+                    <input id="reply-tel" type="radio" name="reply"><label for="reply-tel">電話</label>
+                </div>
+                <div>
+                    <label>ご連絡可能な時間帯：</label>
+                    <input id="tel-am" type="checkbox" name="tel-time"><label for="tel-am">午前</label>
+                    <input id="tel-pm" type="checkbox" name="tel-time"><label for="tel-pm">午後</label>
+                </div>
+                <div>
+                    <label for="category">お問い合わせ項目：</label>
+                    <select id="category" name="category">
+                        <option value="">お問い合わせ項目を選択</option>
+                        <option value="product">商品について</option>
+                        <option value="order">注文について</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comment">お問い合わせ内容(必須)：</label><br>
+                    <textarea id="comment" rows="10" cols="30" placeholder="お問い合わせ内容を入力して下さい" required></textarea>
+                </div>
+                <div>
+                    <label for="testpass">パスワードテスト：</label>
+                    <input id="testpass" type="password" name="入力項目名">
+                </div>
+                <div>
+                    <input type="reset" value="リセット">
+                    <input type="submit" value="送信">
+                </div>
+                </form>
+            </section>
+            </main>
+        <footer id="footer">
+            <h3>contact</h3>
+            <p><a href="contact.html">こちら</a>のフォームからお問い合わせください。</p>
+            <!--<p><a href="contact.html" target="_blank">こちら</a>は別ウィンドウで開く</p>-->
+        </footer>
+    </div>
+</body>
+</html>
