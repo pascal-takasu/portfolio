@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>アクセサリー専門店　HAPPY</title>
+</head>
+
+<body>
+    <div id="content">
+        <header id="header">
+            <!--(1)index.htmlの<header>～</header>内をコピーする-->
+        </header>
+        <main>
+            <section id="contact">
+                <h2>CONTACT</h2>
+                <p>以下のフォームからお問い合わせください</p>
+                <!--(2)formタグをaction=""、method="POST"で開始する-->
+                <!--(3)formタグの中にtableタグを開始する-->
+                <!--(4)trタグを定義し、thタグで「入力項目」と「入力欄」をそれぞれ見出しにする-->
+                            入力項目
+                            入力欄
+                <!--(5)trタグを定義し、tdタグで「お問い合わせ項目：」を囲い、もう１つのtdタグ内にselectタグをname="category"で記述し、「お問い合わせ項目を選択」「商品について」「注文について」「その他」をそれぞれoptionタグで囲う-->
+                                お問い合わせ項目：
+
+                                    お問い合わせ項目を選択
+                                    商品について
+                                    注文について
+                                    その他
+                <!--(6)trタグを定義し、tdタグで「お名前：」を囲い、もう１つのtdタグ内にinputタグでテキストボックスを作成する。idとnameには"name"を指定し、placeholderには"お名前"と記載する。必須項目とする。-->
+                                お名前：
+                <!--(7)trタグを定義し、tdタグで「メールアドレス：」を囲い、もう１つのtdタグ内にinputタグでメールアドレス入力用のテキストボックスを作成する。idとnameには"email"を指定し、placeholderには"メールアドレス"と記載する。必須項目とする。-->
+                                メールアドレス：
+                <!--(8)trタグを定義し、tdタグで「性別：」を囲い、もう１つのtdタグ内にinputタグでラジオボタンを３つ作成する。nameにはgenderを指定し、idは女性の場合は"gender-female"、男性の場合は"gender-male"、未回答の場合は"gender-ex"とする。-->
+                                性別：
+
+                                女性
+                                男性
+                                未回答
+                <!--(9)trタグを定義し、tdタグで「お問い合わせ内容：」を囲い、もう１つのtdタグ内にテキストエリアを作成する。高さを10、幅を30に指定する。placeholderには"お問い合わせ内容を入力してください"と記述する。必須項目とする。-->
+                                お問い合わせ内容：
+                <!--(10)tableタグを終了する-->
+                <!--(11)リセットボタンを作成する。valueには"入力内容を取り消す"と記述する-->
+                <!--(12)送信ボタンを作成する。valueには"送信する"と記述する-->
+                <!--(13)formタグを終了する-->
+
+            </section>
+        </main>
+        <footer id="footer">
+            <p>Copyright HAPPY Co.,Ltd. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
