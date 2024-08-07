@@ -25,3 +25,18 @@ th {
     color:white;
     background-color: gray;
 }
+
+#content {
+    width: 80%;
+    margin: auto;
+}
+th,td {
+    padding: 10px;
+}
+main img {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
