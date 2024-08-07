@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>アクセサリー専門店　HAPPY</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="content">
+        <header id="header">
+            <h1><a href="index.html"><img src="img/icon.png">アクセサリー専門店　HAPPY</a></h1>
+            <p>HAPPYではアクセサリー製品の企画、製造、販売、および、関連するサービスの提供を行っています。</p>
+            <nav id="menu">
+                <p><a href="index.html#news">NEWS</a> <a href="index.html#goods">GOODS</a> <a
+                        href="index.html#contact">CONTACT</a> </p>
+            </nav>
+        </header>
+        <main>
+            <section id="contact">
+                <h2>CONTACT</h2>
+                <p>以下のフォームからお問い合わせください</p>
+
+                <form action="" method="POST">
+                    <table>
+                        <tr>
+                            <th>入力項目</th>
+                            <th>入力欄</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>お問い合わせ項目：</label>
+                            </td>
+                            <td>
+                                <select name="category">
+                                    <option value="">お問い合わせ項目を選択</option>
+                                    <option value="product">商品について</option>
+                                    <option value="order">注文について</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="name">お名前：</label>
+                            </td>
+                            <td>
+                                <input id="name" type="text" name="name" placeholder="お名前" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">メールアドレス：</label>
+                            </td>
+                            <td>
+                                <input id="email" type="email" name="email" placeholder="メールアドレス" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="gender">性別：</label>
+                            </td>
+                            <td>
+                                <input id="gender-female" type="radio" name="gender"><label
+                                    for="gender-female">女性</label>
+                                <input id="gender-male" type="radio" name="gender"><label for="gender-male">男性</label>
+                                <input id="gender-ex" type="radio" name="gender"><label for="gender-ex">未回答</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="comment">お問い合わせ内容：</label>
+                            </td>
+                            <td>
+                                <textarea id="comment" rows="10" cols="30" placeholder="お問い合わせ内容を入力して下さい"
+                                    required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="reset" class="form-button" value="入力内容を取り消す">
+                    <input type="submit" class="form-button" value="送信する">
+
+                </form>
+
+            </section>
+        </main>
+        <footer id="footer">
+            <p>Copyright HAPPY Co.,Ltd. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

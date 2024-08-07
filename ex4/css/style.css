@@ -1,0 +1,18 @@
+body{
+    font-family: serif;
+}
+h1{
+    font-size:48px;
+}
+a{
+    color:lightsteelblue;
+    text-decoration-line: none;
+}
+#menu{
+    background-color: midnightblue;
+    line-height: 48px;
+    font-weight: bold;
+}
+#footer{
+    text-align: center;
+}
