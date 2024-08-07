@@ -7,6 +7,7 @@ h1{
 a{
     color:lightsteelblue;
     text-decoration-line: none;
+    margin: 30px;
 }
 #menu{
     background-color: midnightblue;
@@ -15,4 +16,11 @@ a{
 }
 #footer{
     text-align: center;
+}
+main {
+    width: 70%;
+    margin: auto;
+}
+th,td,.form-button {
+    padding: 10px;
 }
