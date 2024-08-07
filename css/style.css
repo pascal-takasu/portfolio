@@ -68,3 +68,7 @@ nav p{
         display: block;
     }
 }
+
+.clicked {
+    background-color: gray;
+}

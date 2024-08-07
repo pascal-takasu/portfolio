@@ -54,3 +54,19 @@ function menuMouseOver() {
 
 //マウスオーバーイベント
 document.getElementById("menu").onmouseover = menuMouseOver;
+
+//スタイルの操作を行う関数の定義
+function headerMouseOver() {
+    document.getElementById("header").style.color = "red";
+}
+
+//スタイルの操作の呼び出し
+document.getElementById("header").onmouseover = headerMouseOver;
+
+//classの追加・削除を行う関数の定義
+function headerOnClick() {
+    document.getElementById("header").classList.toggle("clicked");
+}
+
+//classの追加・削除を行う関数の呼び出し
+document.getElementById("header").onclick = headerOnClick;
