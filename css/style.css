@@ -39,9 +39,32 @@ main img {
 
 table {
     width: 100%;
+    max-width: 800px;
+    margin: auto;
 }
 
 ul {
     border: solid 1px gray;
     border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav p{
+    padding: 10px;
+}
+
+.sp-tel{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .sp-tel{
+        display: block;
+    }
 }
