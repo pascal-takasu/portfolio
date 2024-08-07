@@ -10,39 +10,70 @@
     <div id="content">
         <header id="header">
             <!--(1)index.htmlの<header>～</header>内をコピーする-->
+            <h1><a href="index.html"><img src="img/icon.png">アクセサリー専門店　HAPPY</a><!--(1)index.htmlへのリンク追加--><!--(2)icon.pngの画像表示--></h1>
+            <p>HAPPYではアクセサリー製品の企画、製造、販売、および、関連するサービスの提供を行っています。</p>
+            <nav id="menu">
+                <p><!--(3)index.htmlページの各id箇所へのリンク追加-->
+                    <a href="index.html#news">NEWS</a>
+                    <a href="index.html#goods">GOODS</a>
+                    <a href="index.html#contact">CONTACT</a>
+                </p>
+            </nav>
         </header>
         <main>
             <section id="contact">
                 <h2>CONTACT</h2>
                 <p>以下のフォームからお問い合わせください</p>
                 <!--(2)formタグをaction=""、method="POST"で開始する-->
-                <!--(3)formタグの中にtableタグを開始する-->
-                <!--(4)trタグを定義し、thタグで「入力項目」と「入力欄」をそれぞれ見出しにする-->
-                            入力項目
-                            入力欄
-                <!--(5)trタグを定義し、tdタグで「お問い合わせ項目：」を囲い、もう１つのtdタグ内にselectタグをname="category"で記述し、「お問い合わせ項目を選択」「商品について」「注文について」「その他」をそれぞれoptionタグで囲う-->
-                                お問い合わせ項目：
-
-                                    お問い合わせ項目を選択
-                                    商品について
-                                    注文について
-                                    その他
-                <!--(6)trタグを定義し、tdタグで「お名前：」を囲い、もう１つのtdタグ内にinputタグでテキストボックスを作成する。idとnameには"name"を指定し、placeholderには"お名前"と記載する。必須項目とする。-->
-                                お名前：
-                <!--(7)trタグを定義し、tdタグで「メールアドレス：」を囲い、もう１つのtdタグ内にinputタグでメールアドレス入力用のテキストボックスを作成する。idとnameには"email"を指定し、placeholderには"メールアドレス"と記載する。必須項目とする。-->
-                                メールアドレス：
-                <!--(8)trタグを定義し、tdタグで「性別：」を囲い、もう１つのtdタグ内にinputタグでラジオボタンを３つ作成する。nameにはgenderを指定し、idは女性の場合は"gender-female"、男性の場合は"gender-male"、未回答の場合は"gender-ex"とする。-->
-                                性別：
-
-                                女性
-                                男性
-                                未回答
-                <!--(9)trタグを定義し、tdタグで「お問い合わせ内容：」を囲い、もう１つのtdタグ内にテキストエリアを作成する。高さを10、幅を30に指定する。placeholderには"お問い合わせ内容を入力してください"と記述する。必須項目とする。-->
-                                お問い合わせ内容：
-                <!--(10)tableタグを終了する-->
-                <!--(11)リセットボタンを作成する。valueには"入力内容を取り消す"と記述する-->
-                <!--(12)送信ボタンを作成する。valueには"送信する"と記述する-->
-                <!--(13)formタグを終了する-->
+                <form action="" method="POST">
+                    <!--(3)formタグの中にtableタグを開始する-->
+                    <table>
+                        <!--(4)trタグを定義し、thタグで「入力項目」と「入力欄」をそれぞれ見出しにする-->
+                        <tr><th>入力項目</th><th>入力欄</th></tr>
+                        <!--(5)trタグを定義し、tdタグで「お問い合わせ項目：」を囲い、もう１つのtdタグ内にselectタグをname="category"で記述し、「お問い合わせ項目を選択」「商品について」「注文について」「その他」をそれぞれoptionタグで囲う-->
+                        <tr>
+                            <td><label for="category">お問い合わせ項目：</label></td>
+                            <td>
+                                <select id="category" name="category">
+                                    <option value="">お問い合わせ項目を選択</option>
+                                    <option value="product">商品について</option>
+                                    <option value="order">注文について</option>
+                                    <option value="other">その他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <!--(6)trタグを定義し、tdタグで「お名前：」を囲い、もう１つのtdタグ内にinputタグでテキストボックスを作成する。idとnameには"name"を指定し、placeholderには"お名前"と記載する。必須項目とする。-->
+                        <tr>
+                            <td><label for="name">お名前：</label></td>
+                            <td><input id="name" name="name" placeholder="お名前" required></td>
+                        </tr>
+                        <!--(7)trタグを定義し、tdタグで「メールアドレス：」を囲い、もう１つのtdタグ内にinputタグでメールアドレス入力用のテキストボックスを作成する。idとnameには"email"を指定し、placeholderには"メールアドレス"と記載する。必須項目とする。-->
+                        <tr>
+                            <td><label for="email">メールアドレス：</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="メールアドレス" required></td>
+                        </tr>
+                        <!--(8)trタグを定義し、tdタグで「性別：」を囲い、もう１つのtdタグ内にinputタグでラジオボタンを３つ作成する。nameにはgenderを指定し、idは女性の場合は"gender-female"、男性の場合は"gender-male"、未回答の場合は"gender-ex"とする。-->
+                        <tr>
+                            <td>性別：</td>
+                            <td>
+                                <input type="radio" name="gender" id="gender-female">女性
+                                <input type="radio" name="gender" id="gender-male">男性
+                                <input type="radio" name="gender" id="gender-ex">未回答
+                            </td>
+                        </tr>
+                        <!--(9)trタグを定義し、tdタグで「お問い合わせ内容：」を囲い、もう１つのtdタグ内にテキストエリアを作成する。高さを10、幅を30に指定する。placeholderには"お問い合わせ内容を入力してください"と記述する。必須項目とする。-->
+                        <tr>
+                            <td><label for="comment">お問い合わせ内容：</label></td>
+                            <td>
+                                <textarea id="comment" rows="10" cols="30" placeholder="お問い合わせ内容を入力してください" required></textarea>
+                            </td>
+                        </tr>
+                    </table><!--(10)tableタグを終了する-->
+                    <!--(11)リセットボタンを作成する。valueには"入力内容を取り消す"と記述する-->
+                    <input type="reset" value="入力内容を取り消す">
+                    <!--(12)送信ボタンを作成する。valueには"送信する"と記述する-->
+                    <input type="submit" value="送信する">
+                </form><!--(13)formタグを終了する-->
 
             </section>
         </main>
