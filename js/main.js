@@ -70,3 +70,29 @@ function headerOnClick() {
 
 //classの追加・削除を行う関数の呼び出し
 document.getElementById("header").onclick = headerOnClick;
+
+//モーダルを表示する関数の定義
+function modalOpen() {
+    console.log("modalOpen");
+    document.getElementById("modal").style.display = "block";
+};
+
+//送信ボタンをクリックしたときにmodalOpen関数を呼び出す
+document.getElementById("submit").onclick = modalOpen;
+
+//モーダルを非表示にする関数の定義
+function modalClose() {
+    console.log("modalClose");
+    document.getElementById("modal").style.display = "none";
+};
+
+//モーダル上で戻るボタンをクリックしたときにmodalClose関数を呼び出す
+document.getElementById("modal-close").onclick = modalClose;
+
+//ページを遷移させる関数の定義
+function modalSubmit() {
+    location = "complete.html";
+};
+
+//モーダル上で送信ボタンをクリックした時にmodalSubmit関数を呼び出す
+document.getElementById("modal-submit").onclick = modalSubmit;

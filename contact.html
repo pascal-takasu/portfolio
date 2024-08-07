@@ -62,16 +62,25 @@
                 </div>
                 <div>
                     <input class="btn btn-outline-dark" type="reset" value="リセット">
-                    <input class="btn btn-dark" type="submit" value="送信">
+                    <input class="btn btn-dark" type="submit" id="submit" value="送信">
                 </div>
                 </form>
+
+                <div id="modal">
+                    <div id="modal-content">
+                        <p>本当に送信しますか？</p>
+                        <p class="btn btn-dark" id="modal-submit">送信する</p>
+                        <p class="btn btn-outline-dark" id="modal-close">戻る</p>
+                    </div>
+                </div>
             </section>
-            </main>
+        </main>
         <footer id="footer">
             <h3>contact</h3>
             <p><a href="contact.html">こちら</a>のフォームからお問い合わせください。</p>
             <!--<p><a href="contact.html" target="_blank">こちら</a>は別ウィンドウで開く</p>-->
         </footer>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
