@@ -89,3 +89,26 @@ nav p{
     padding: 50px;
     width: 50%;
 }
+
+.sp-icon {
+    display: none;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+@media screen and (max-width : 600px) {
+    #humb-open {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        z-index: 1;
+    }
+}
