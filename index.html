@@ -6,6 +6,7 @@
     <title>タイトル</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <div id="content">
@@ -23,7 +24,22 @@
             </nav>
         </header>
         <main>
-            <img src="img/mainvisual.png" alt="メインビジュアル">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/mainvisual.png" alt="メインビジュアル"></div>
+                    <div class="swiper-slide"><img src="img/mainvisual-2.png" alt="メインビジュアル2"></div>
+                    <div class="swiper-slide"><img src="img/mainvisual-3.png" alt="メインビジュアル3"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
             <h2>MAIN</h2>
             <p><strong>メインコンテンツ</strong>を表示します</p>
             <section id="news">
@@ -90,6 +106,7 @@
             <!--<p><a href="contact.html" target="_blank">こちら</a>は別ウィンドウで開く</p>-->
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
