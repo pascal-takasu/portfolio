@@ -40,3 +40,8 @@ main img {
 table {
     width: 100%;
 }
+
+ul {
+    border: solid 1px gray;
+    border-radius: 10px;
+}
