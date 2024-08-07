@@ -35,3 +35,22 @@ function greet(name) {
 // 関数の呼び出し
 greet("山田");
 greet("鈴木");
+
+console.log(document.getElementById("menu"));
+//document.getElementById("menu").textContent = "MENUの書き換え";
+
+//クリックイベントで呼ばれる関数の定義
+function menuClick() {
+    document.getElementById("menu").textContent = "クリックされました";
+}
+
+//クリックイベント
+document.getElementById("menu").onclick = menuClick;
+
+//マウスオーバーイベントで呼ばれる関数の定義
+function menuMouseOver() {
+    document.getElementById("menu").textContent = "マウスオーバーされました";
+}
+
+//マウスオーバーイベント
+document.getElementById("menu").onmouseover = menuMouseOver;
