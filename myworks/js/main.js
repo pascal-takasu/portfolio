@@ -28,7 +28,6 @@ function modalOpen(id) {
 
 //作品上の画像をクリックしたときにmodalOpen関数を呼び出す
 document.getElementById("image_s3").onclick = () => modalOpen("image_s3");
-//document.getElementById("image_s3").onclick = modalOpen("image_s3");
 document.getElementById("image_s4").onclick = () => modalOpen("image_s4");
 document.getElementById("image_s5").onclick = () => modalOpen("image_s5");
 document.getElementById("image_s6").onclick = () => modalOpen("image_s6");
