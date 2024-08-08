@@ -1,0 +1,92 @@
+/*見出し系は中央揃え*/
+h1,h2,h3 {
+    text-align: center;
+}
+
+/*内容物中央揃えで見栄え良く*/
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+/*番号無しリスト設定*/
+ul {
+    /*枠線と色*/
+    border: solid 1px gray;
+    /*端の丸み*/
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/*リスト内容物設定*/
+li {
+    line-height: 2em;
+}
+
+/*テーブル大枠一律設定*/
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+/*テーブル見出しの見栄え設定*/
+th {
+    color:white;
+    background-color: gray;
+}
+
+/*テーブル共通 間隔空ける*/
+th,td {
+    padding: 10px;
+}
+
+/*Swiper用 メイン画像を幅限界にセット*/
+main img {
+    width: 100%;
+}
+
+/*アンカーリンク用*/
+a {
+    font-weight: bold;
+    color: darkcyan;
+}
+
+/*作品紹介の画像設定*/
+#works img {
+    /*width: 128px;*/
+    width: 40%;
+    margin: auto;
+}
+
+/*作品紹介用モーダル設定*/
+#modal {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+/*作品紹介用モーダル内容物設定*/
+#modal-content {
+    background-color: white;
+    margin: 20% auto;
+    padding: 50px;
+    width: 50%;
+    z-index: 1;
+}
+
+/*フッターの電話番号表示は画面幅がせまい時だけ（スマホ用）*/
+.sp-tel{
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .sp-tel{
+        display: block;
+    }
+}

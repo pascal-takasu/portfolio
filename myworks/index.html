@@ -9,15 +9,96 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-    <header>
-        <h1>MY WORKS</h1>
-    </header>
-    <footer id="footer">
-        <h3>contact</h3>
-        <p><a href="contact.html">こちら</a>のフォームからお問い合わせください。</p>
-        <p class="sp-tel">お電話のお問い合わせは<a href="tel:000-XXXX-XXXX">こちら</a></p>
-        <!--<p><a href="contact.html" target="_blank">こちら</a>は別ウィンドウで開く</p>-->
-    </footer>
+    <div id="content">
+        <!--ヘッダー-->
+        <header id="header">
+            <h1>MY WORKS</h1>
+            <!--todo ナビゲーションメニュー-->
+            <a href="index.html#introduction"><p>自己紹介</p></a>
+            <a href="index.html#news"><p>新着情報</p></a>
+            <a href="index.html#works"><p>作品</p></a>
+            <a href="index.html#footer"><p>contact</p></a>
+        </header>
+        <!--メイン-->
+        <main>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/image_s3.jpeg" alt="作品画像1"></div>
+                    <div class="swiper-slide"><img src="img/image_s4.jpeg" alt="作品画像2"></div>
+                    <div class="swiper-slide"><img src="img/image_s5.jpeg" alt="作品画像3"></div>
+                    <div class="swiper-slide"><img src="img/image_s6.jpeg" alt="作品画像4"></div>
+                    <div class="swiper-slide"><img src="img/image_s7.jpeg" alt="作品画像5"></div>
+                    <div class="swiper-slide"><img src="img/image_s8.jpeg" alt="作品画像6"></div>
+                    <div class="swiper-slide"><img src="img/image_s9.jpeg" alt="作品画像7"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!--自己紹介コーナー-->
+            <section id="introduction">
+                <h2>自己紹介コーナー</h2>
+                <p>高須 実</p>
+                <p>小物系作りをしています</p>
+                <ul class="list-group">
+                    <li class="list-group-item">クロスステッチ</li>
+                    <li class="list-group-item">クッション</li>
+                    <li class="list-group-item">キーホルダー</li>
+                    <li class="list-group-item">ポケモン</li>
+                    <li class="list-group-item">etc...</li>
+                </ul>
+            </section>
+            <!--新着情報コーナー-->
+            <section id="news">
+                <h2>新着情報コーナー</h2>
+                <table border="1">
+                    <tr>
+                        <th>日付</th>
+                        <th>タイトル</th>
+                    </tr>
+                    <tr>
+                        <td>2024-08-08</td>
+                        <td>作品を展示しました</td>
+                    </tr>
+                    <tr>
+                        <td>2024-08-07</td>
+                        <td>個人Webサイトを開設しました</td>
+                    </tr>
+                </table>
+            </section>
+            <!--todo 作品コーナー-->
+            <section id="works">
+                <h2>作品コーナー</h2>
+                <img id="image_s3" src="img/image_s3.jpeg" alt="作品画像1">
+                <img id="image_s4" src="img/image_s4.jpeg" alt="作品画像2">
+                <img id="image_s5" src="img/image_s5.jpeg" alt="作品画像3">
+                <img id="image_s6" src="img/image_s6.jpeg" alt="作品画像4">
+                <img id="image_s7" src="img/image_s7.jpeg" alt="作品画像5">
+                <img id="image_s8" src="img/image_s8.jpeg" alt="作品画像6">
+                <img id="image_s9" src="img/image_s9.jpeg" alt="作品画像7">
+                <!--クリック時に拡大作品をモーダル表示-->
+                <div id="modal">
+                    <div id="modal-content">
+                        <img id="modal-image" src="img/image_s3.jpeg" alt="モーダル上作品画像">
+                        <p class="btn btn-outline-dark" id="modal-close">閉じる</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--フッター-->
+        <footer id="footer">
+            <!--問い合わせコーナー-->
+            <h3>contact</h3>
+            <p><a href="contact.html">こちら</a>のフォームからお問い合わせください。</p>
+            <p class="sp-tel">お電話のお問い合わせは<a href="tel:000-XXXX-XXXX">こちら</a></p>
+        </footer>
+    </div>
     <!--スクリプト読み込み-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
